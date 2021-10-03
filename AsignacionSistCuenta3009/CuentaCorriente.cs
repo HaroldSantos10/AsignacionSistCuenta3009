@@ -8,9 +8,11 @@ namespace AsignacionSistCuenta3009
 {
     class CuentaCorriente: Cuenta
     {
-        private float reIntegro()
-        {
+        //private float reIntegro()
+        //{// cantidad de dinero que se retira de la cuenta
+            
 
-        }
+            
+        //}
     }
 }

@@ -8,15 +8,16 @@ namespace AsignacionSistCuenta3009
 {
     class CuentaAhorroPFijo: Cuenta
     {
-        private DateTime vencimiento { get; set; }
+        Cuenta cuenta = new Cuenta();
+        public DateTime vencimiento { get; set; }
 
-        private float ingresoMes()
-        {
-            float ingresoMensual = 100;
-            float neto = ingresoMensual - 
+        //private float ingresoMes()
+        //{
+        //    float ingresoMensual = cuenta;
 
-            return ingresoMensual;
-        }
+
+        //    return ingresoMensual;
+        //}
 
     }
 }

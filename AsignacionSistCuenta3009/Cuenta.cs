@@ -8,20 +8,22 @@ namespace AsignacionSistCuenta3009
 {
     class Cuenta
     {
-        private long numero { get; set; }
-        private string titular { get; set; }
-        private float saldo { get; set; }
-        private float interes { get; set; }
+        public long numero { get; set; }
+        public string titular { get; set; }
+        public float saldo { get; set; }
+        public float interes { get; set; }
 
+        
      
         public int ingreso()
-        {
-            return 100;
+        {//ingreso que se deposita en la cuenta
+
+            return 300;
         }
-        public double ingresoInteresmes()
-        {
-            Cuenta cuenta = new Cuenta();
-            cuenta.interes = 10/100;
+        public float ingresoInteresmes()
+        {//la cuenta tiene un ingreso de interés del 3% mensual sobre el ingreso
+            //Cuenta cuenta = new Cuenta();
+            //cuenta.interes = 10/100;
             //interes del 10%
             var monto = ingreso();
 
@@ -31,18 +33,18 @@ namespace AsignacionSistCuenta3009
         }
 
         public string leerSaldo()
-        {
-            return "El ingreso fue de $" + ingreso() + " menos $" + ingresoInteresmes() + " en interes, " +
-                " Saldo final de: $"+(ingreso()-ingresoInteresmes());
+        {//muestra el saldo de la cuenta
+            return "El ingreso fue de $" + ingreso() + " mas $" + ingresoInteresmes() + " en interes, " +
+                "Saldo final de: $"+(ingreso()+ ingresoInteresmes());
         }
 
-        public string transferirHasta()
-        {
-            double canTrasferible;
-            canTrasferible = ingreso() - ingresoInteresmes();
+        public float transferirHasta()
+        {// la cuenta no puede tener menos de $100
+            
+            var canTrasferible = saldo - 100;
 
 
-            return "La cantidad transferible es de: " + canTrasferible;
+            return canTrasferible;
         }
 
     }
