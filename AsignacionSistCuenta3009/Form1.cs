@@ -47,5 +47,17 @@ namespace AsignacionSistCuenta3009
 
             lbFechaCtn.Text = cuentaPfijo.vencimiento.ToString();
         }
+
+        private void btnPension_Click(object sender, EventArgs e)
+        {
+            PlanPenForm Pen = new PlanPenForm();
+            Pen.Show();
+        }
+
+        private void btnTransac_Click(object sender, EventArgs e)
+        {
+            TransaccionReti trans = new TransaccionReti();
+            trans.Show();
+        }
     }
 }

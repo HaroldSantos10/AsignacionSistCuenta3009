@@ -9,8 +9,10 @@ namespace AsignacionSistCuenta3009
     class PlanPenciones:Cuenta
     {
         public DateTime vencimiento { get; set; }
-        public float cotización { get; set; }
+        public float cotizacion { get; set; }
         public string numCuentaOrigen { get; set; }
-
+        
+        public float porcentCotiza { get; set; }
+        
     }
 }

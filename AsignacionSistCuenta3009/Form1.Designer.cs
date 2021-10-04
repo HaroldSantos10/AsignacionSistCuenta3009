@@ -48,6 +48,8 @@ namespace AsignacionSistCuenta3009
             this.lbResumenCtn = new System.Windows.Forms.Label();
             this.lbFechaCtn = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.btnPension = new System.Windows.Forms.Button();
+            this.btnTransac = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -217,7 +219,7 @@ namespace AsignacionSistCuenta3009
             // 
             this.lbFechaCtn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lbFechaCtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFechaCtn.Location = new System.Drawing.Point(599, 320);
+            this.lbFechaCtn.Location = new System.Drawing.Point(594, 246);
             this.lbFechaCtn.Name = "lbFechaCtn";
             this.lbFechaCtn.Size = new System.Drawing.Size(167, 25);
             this.lbFechaCtn.TabIndex = 18;
@@ -226,17 +228,39 @@ namespace AsignacionSistCuenta3009
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(576, 290);
+            this.label11.Location = new System.Drawing.Point(571, 216);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(171, 17);
             this.label11.TabIndex = 17;
             this.label11.Text = "Vencimiento de la cuenta:";
+            // 
+            // btnPension
+            // 
+            this.btnPension.Location = new System.Drawing.Point(626, 289);
+            this.btnPension.Name = "btnPension";
+            this.btnPension.Size = new System.Drawing.Size(211, 45);
+            this.btnPension.TabIndex = 19;
+            this.btnPension.Text = "Mostrar cuenta de pensión";
+            this.btnPension.UseVisualStyleBackColor = true;
+            this.btnPension.Click += new System.EventHandler(this.btnPension_Click);
+            // 
+            // btnTransac
+            // 
+            this.btnTransac.Location = new System.Drawing.Point(646, 361);
+            this.btnTransac.Name = "btnTransac";
+            this.btnTransac.Size = new System.Drawing.Size(190, 45);
+            this.btnTransac.TabIndex = 20;
+            this.btnTransac.Text = "Transacción";
+            this.btnTransac.UseVisualStyleBackColor = true;
+            this.btnTransac.Click += new System.EventHandler(this.btnTransac_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(881, 435);
+            this.Controls.Add(this.btnTransac);
+            this.Controls.Add(this.btnPension);
             this.Controls.Add(this.lbFechaCtn);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.lbResumenCtn);
@@ -285,6 +309,8 @@ namespace AsignacionSistCuenta3009
         private System.Windows.Forms.Label lbResumenCtn;
         private System.Windows.Forms.Label lbFechaCtn;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button btnPension;
+        private System.Windows.Forms.Button btnTransac;
     }
 }
 
